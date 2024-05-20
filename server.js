@@ -47,4 +47,6 @@ app.post('/ingredients', function (req, res) {
   res.status(200).send('Successfully posted ingredient');
 });
 
-app.listen(3080);
+app.listen(3080, '0.0.0.0', () => {
+  console.log('Server is running on port 3080');
+});
